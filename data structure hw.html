@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>My interests</title>
+    </head>
+    <body>
+        <h1>My interests</h1>
+        <script>
+            var interests={
+             song:'Typa Girl',
+             elective:'art',
+             aesthetic:'nature',
+             color:'purple/blue',
+             reading:'fantasy'
+            };
+            var reading=["School for good and evil", "New Dragon City", "Seagarden", "Catching a Story Fish"];
+            document.write("Favourite Song is:"+interests.song,"<br>","Favourite Aesthetic is:"+interests.aesthetic,"<br>");
+            document.write("Some books read are:"+reading.join(","),"<br>");
+            document.write("My favourtie book is:"+reading[2],"<br>");
+            reading.pop();
+            document.write("Some of my favourite books are:"+reading.join(";"))+reading.pop();;
+        </script>
+    </body>
+</html>
